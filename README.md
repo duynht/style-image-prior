@@ -8,10 +8,10 @@ Implementation of the method described in the paper: [Style Generator Inversion 
 | Corrupted | Ours | GT |
 
 ## Super-Resolution (128x128 to 1024x1024)
-| ![image](http://www.vision.huji.ac.il/style-image-prior/img/super-resolution/imgHQ00095.png) | ![image](http://www.vision.huji.ac.il/style-image-prior/img/super-resolution/imgHQ00095-stylegan.png) |
-| :---: | :---: |
-| ![image](http://www.vision.huji.ac.il/style-image-prior/img/super-resolution/imgHQ00044.png) | ![image](http://www.vision.huji.ac.il/style-image-prior/img/super-resolution/imgHQ00044-stylegan.png) |
-| GT | Ours |
+| ![image](http://www.vision.huji.ac.il/style-image-prior/img/super-resolution/imgHQ00095-bicubic.png) | ![image](http://www.vision.huji.ac.il/style-image-prior/img/super-resolution/imgHQ00095-stylegan.png) | ![image](http://www.vision.huji.ac.il/style-image-prior/img/super-resolution/imgHQ00095.png) |
+| :---: | :---: | :---: |
+| ![image](http://www.vision.huji.ac.il/style-image-prior/img/super-resolution/imgHQ00044-bicubic.png) | ![image](http://www.vision.huji.ac.il/style-image-prior/img/super-resolution/imgHQ00044-stylegan.png) | ![image](http://www.vision.huji.ac.il/style-image-prior/img/super-resolution/imgHQ00044.png) |
+| Bicubic | Ours | GT |
 
 ## Re-animation: Animating Obama from a video of Trump 
 | ![image](http://www.vision.huji.ac.il/style-image-prior/img/reanimation/trump_1.png) | ![image](http://www.vision.huji.ac.il/style-image-prior/img/reanimation/trump_2.png) | ![image](http://www.vision.huji.ac.il/style-image-prior/img/reanimation/trump_3.png) | ![image](http://www.vision.huji.ac.il/style-image-prior/img/reanimation/trump_4.png) | ![image](http://www.vision.huji.ac.il/style-image-prior/img/reanimation/trump_5.png) |
