@@ -1,13 +1,13 @@
 # Style Image Prior
 Implementation of the method described in the paper: [Style Generator Inversion for Image Enhancement and Animation](http://www.vision.huji.ac.il/style-image-prior) by Aviv Gabbay and Yedid Hoshen.
 
-## Inpainting Demo
+## Inpainting
 | ![image](http://www.vision.huji.ac.il/style-image-prior/img/inpainting/imgHQ00040-corrupted.png) | ![image](http://www.vision.huji.ac.il/style-image-prior/img/inpainting/imgHQ00040-stylegan.png) | ![image](http://www.vision.huji.ac.il/style-image-prior/img/inpainting/imgHQ00040.png) |
 | :---: | :---: | :---: |
 | ![image](http://www.vision.huji.ac.il/style-image-prior/img/inpainting/imgHQ00046-corrupted.png) | ![image](http://www.vision.huji.ac.il/style-image-prior/img/inpainting/imgHQ00046-stylegan.png) | ![image](http://www.vision.huji.ac.il/style-image-prior/img/inpainting/imgHQ00046.png) |
 | Corrupted | Ours | GT |
 
-## Super-Resolution Demo (128x128 to 1024x1024)
+## Super-Resolution (128x128 to 1024x1024)
 | ![image](http://www.vision.huji.ac.il/style-image-prior/img/super-resolution/imgHQ00095.png) | ![image](http://www.vision.huji.ac.il/style-image-prior/img/super-resolution/imgHQ00095-stylegan.png) |
 | :---: | :---: |
 | ![image](http://www.vision.huji.ac.il/style-image-prior/img/super-resolution/imgHQ00044.png) | ![image](http://www.vision.huji.ac.il/style-image-prior/img/super-resolution/imgHQ00044-stylegan.png) |
@@ -52,8 +52,8 @@ inpainting.py --imgs-dir <input-imgs-dir> --masks-dir <output-masks-dir>
 Performing super-resolution on given images can be done as follows:
 ```
 super_resolution.py --imgs-dir <input-imgs-dir> --reconstructions-dir <output-reconstructions-dir> --latents-dir <output-latents-dir>
-    [--input-img-size INPUT_IMG_HEIGHT INPUT_IMG_WIDTH]
-    [--perceptual-img-size EFFECTIVE_IMG_HEIGHT EFFECTIVE_IMG_WIDTH]
+    [--input-img-size HR_IMG_HEIGHT HR_IMG_WIDTH]
+    [--perceptual-img-size LR_IMG_HEIGHT LR_IMG_WIDTH]
     [--learning-rate LEARNING_RATE]
     [--total-iterations TOTAL_ITERATIONS]
 ```
