@@ -40,7 +40,8 @@ export PYTHONPATH=<path-to-stylegan-project>
 Recovering missing parts of given images along with the respective latent codes can be done as follows:
 ```
 inpainting.py --imgs-dir <input-imgs-dir> --masks-dir <output-masks-dir>
-    --corruptions-dir <output-corruptions-dir> --restorations-dir <output-restorations-dir> --latents-dir <output-latents-dir>
+    --corruptions-dir <output-corruptions-dir> --restorations-dir <output-restorations-dir>
+    --latents-dir <output-latents-dir>
     [--input-img-size INPUT_IMG_HEIGHT INPUT_IMG_WIDTH]
     [--perceptual-img-size EFFECTIVE_IMG_HEIGHT EFFECTIVE_IMG_WIDTH]
     [--mask-size MASK_HEIGHT MASK_WIDTH]
@@ -51,9 +52,10 @@ inpainting.py --imgs-dir <input-imgs-dir> --masks-dir <output-masks-dir>
 ### Style Image Prior for Super-Resolution
 Performing super-resolution on given images can be done as follows:
 ```
-super_resolution.py --imgs-dir <input-imgs-dir> --reconstructions-dir <output-reconstructions-dir> --latents-dir <output-latents-dir>
-    [--input-img-size HR_IMG_HEIGHT HR_IMG_WIDTH]
-    [--perceptual-img-size LR_IMG_HEIGHT LR_IMG_WIDTH]
+super_resolution.py --lr-imgs-dir <input-imgs-dir> --hr-imgs-dir <output-imgs-dir>
+    --latents-dir <output-latents-dir>
+    [--lr-img-size LR_IMG_HEIGHT LR_IMG_WIDTH]
+    [--hr-img-size HR_IMG_HEIGHT HR_IMG_WIDTH]
     [--learning-rate LEARNING_RATE]
     [--total-iterations TOTAL_ITERATIONS]
 ```
