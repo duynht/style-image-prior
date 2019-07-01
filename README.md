@@ -66,7 +66,7 @@ If you find this project useful for your research, please cite
 @article{gabbay2019styleimageprior,
   author    = {Aviv Gabbay and Yedid Hoshen},
   title     = {Style Generator Inversion for Image Enhancement and Animation},
-  journal   = {arXiv preprint},
+  journal   = {arXiv preprint arXiv:1906.11880},
   year      = {2019}
 }
 ```
