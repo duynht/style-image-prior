@@ -62,7 +62,7 @@ def optimize_latent_codes(args):
 
 	generated_img_for_display = tf.saturate_cast(generated_img_resized_to_original, tf.uint8)
 
-	perceptual_model = PerceptualModel(img_size=(args.perceptual_img_size[0], args.perceptual_img_size[1]))
+	perceptual_model = PerceptualModel(img_size=args.perceptual_img_size)
 	generated_img_features = perceptual_model(generated_img_resized_for_perceptual)
 	target_img_features = perceptual_model(degraded_img_resized_for_perceptual)
 
@@ -76,7 +76,7 @@ def optimize_latent_codes(args):
 	img_names = sorted(os.listdir(args.imgs_dir))
 	for img_name in img_names:
 		img = imageio.imread(os.path.join(args.imgs_dir, img_name))
-		img = cv2.resize(img, dsize=args.input_img_size)
+		img = cv2.resize(img, dsize=tuple(args.input_img_size))
 		mask = generate_random_mask(img.shape[:2], mask_size=args.mask_size)
 
 		corrupted_img = img * mask

@@ -41,7 +41,7 @@ def optimize_latent_codes(args):
 		generated_img, tuple(args.perceptual_img_size), method=tf.image.ResizeMethod.NEAREST_NEIGHBOR
 	)
 
-	perceptual_model = PerceptualModel(img_size=(args.perceptual_img_size[0], args.perceptual_img_size[1]))
+	perceptual_model = PerceptualModel(img_size=args.perceptual_img_size)
 	generated_img_features = perceptual_model(generated_img_resized)
 	target_img_features = perceptual_model(target_img_resized)
 

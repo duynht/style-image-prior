@@ -35,7 +35,7 @@ def optimize_latent_codes(args):
 
 	lr_img = tf.placeholder(tf.float32, [None, args.lr_img_size[0], args.lr_img_size[1], 3])
 
-	perceptual_model = PerceptualModel(img_size=(args.lr_img_size[0], args.lr_img_size[1]))
+	perceptual_model = PerceptualModel(img_size=args.lr_img_size)
 	generated_img_features = perceptual_model(generated_lr_img)
 	target_img_features = perceptual_model(lr_img)
 
