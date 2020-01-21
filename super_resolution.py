@@ -13,7 +13,8 @@ import config
 
 from perceptual_model import PerceptualModel
 
-STYLEGAN_MODEL_URL = 'https://drive.google.com/uc?id=1MEGjdvVpUsu1jB4zrXZN7Y4kBBOzizDQ'
+STYLEGAN_MODEL_URL =
+'https://drive.google.com/uc?id=1U0Rlr8a-Q5ogiWGY3yuq2yk8Pn4w7S8M'
 
 
 def optimize_latent_codes(args):
